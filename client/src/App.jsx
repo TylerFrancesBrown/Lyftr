@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import reactLogo from '/react.svg'
 import viteLogo from '/vite.svg'
-import lyftrLogo from '/lyftr.svg'
 import './App.css'
 
 function App() {
