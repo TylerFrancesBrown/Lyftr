@@ -35,10 +35,10 @@ function App() {
       </div>
 
       <div className="right-column">
-        <LiftDisplay name="Bench Press" weight={275} date="2/14/25" set="275 x 1" rank="titan" icon={viteLogo}/>
-        <LiftDisplay name="Squat" weight={315} date="4/6/2025" set="315 x 4" rank="platinum" icon={viteLogo}/>
-        <LiftDisplay name="Deadlift" weight={365} date="4/7/2025" set="365 x 2" rank="champion" icon={viteLogo}/>
-        <BodyDataDisplay weight={175} date="04/12/25" calories={2400} />
+        <LiftDisplay name="Bench Press" weight={275} date="February 14, 2025" set="275 x 1" rank="titan" icon={viteLogo}/>
+        <LiftDisplay name="Squat" weight={315} date="January 29, 2025" set="315 x 2" rank="platinum" icon={viteLogo}/>
+        <LiftDisplay name="Deadlift" weight={365} date="December 29, 2024" set="405 x 1" rank="champion" icon={viteLogo}/>
+        <BodyDataDisplay weight={175} date="April 12, 2025" calories={2367} />
       </div>
     </div>
   )

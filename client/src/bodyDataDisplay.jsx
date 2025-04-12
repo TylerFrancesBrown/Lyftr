@@ -15,7 +15,7 @@ export default function BodyDataDisplay({ weight, date, calories }) {
   };
 
   return (
-    <button className="body-data-button">
+    <button className={`body-data-button ${view}`}>
       <div className="body-data-slider-wrapper">
         <div className={`body-data-slider ${view}`}>
           {/* Weight View */}

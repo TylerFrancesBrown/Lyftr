@@ -12,9 +12,14 @@
     position: relative;
   }
   
-  .body-data-button:hover {
+  .body-data-button.weight:hover {
     transform: scale(1.02);
     filter: drop-shadow(0 0 1em #18bae2);
+  }
+
+  .body-data-button.calories:hover {
+    transform: scale(1.02);
+    filter: drop-shadow(0 0 1em #ff3f19);
   }
   
   /* Top row: text + icon */
