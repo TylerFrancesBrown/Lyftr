@@ -1,0 +1,96 @@
+  .lift-display {
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    padding: 10px 15px 10px 10px;
+    margin-bottom: 5px;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  
+  .lift-display:hover {
+    transform: scale(1.02);
+  }
+  
+  /* RANK: Bronze */
+  .lift-display.bronze:hover {
+    filter: drop-shadow(0 0 1em #cd7f32);
+  }
+  
+  /* RANK: Silver */
+  .lift-display.silver:hover {
+    filter: drop-shadow(0 0 1em #c0c0c0);
+  }
+  
+  /* RANK: Gold */
+  .lift-display.gold:hover {
+    filter: drop-shadow(0 0 1em #ffd700);
+  }
+  
+  /* RANK: Platinum (Green-tinted) */
+  .lift-display.platinum:hover {
+    filter: drop-shadow(0 0 1em #00e699); /* Greenish platinum */
+  }
+
+  
+  /* RANK: Diamond */
+  .lift-display.diamond:hover {
+    filter: drop-shadow(0 0 1em #87cefa); /* Light blue */
+  }
+  
+  /* RANK: Champion */
+  .lift-display.champion:hover {
+    filter: drop-shadow(0 0 1em #d94aff); /* Magenta/Purple */
+  }
+  
+  /* RANK: Titan */
+  .lift-display.titan:hover {
+    filter: drop-shadow(0 0 1em #ff3131); /* Intense red */
+  }
+  
+  /* RANK: Olympian */
+  .lift-display.olympian:hover {
+    filter: drop-shadow(0 0 1em #40e0d0); /* Turquoise */
+  }
+  
+/* Text Layout */
+.lift-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .lift-name {
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  
+  .lift-weight {
+    color: rgb(170, 170, 170);
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  
+  .lift-meta {
+    color: #525252;
+    font-size: 0.6rem;
+  }
+  
+  /* SVG icon placement */
+  .lift-icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+  }
+  
+  .lift-svg-icon {
+    width: 32px;
+    height: 32px;
+  }
