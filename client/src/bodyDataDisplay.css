@@ -1,57 +1,150 @@
-.body-data-display {
-  background-color: #1e1e1e;
-  border-radius: 12px;
-  padding: 10px 15px 10px 10px;
-  margin-bottom: 5px;
-  width: 100%;
-  text-align: left;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-}
-
-.body-data-display:hover {
-  transform: scale(1.02);
-  filter: drop-shadow(0 0 1em #cd7f32); /* Bronze-style glow */
-}
-
-/* Text Layout */
-.body-data-content {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.body-data-name {
-  color: white;
-  font-size: 1rem;
-  font-weight: 600;
-}
-
-.body-data-value {
-  color: rgb(170, 170, 170);
-  font-size: 1.2rem;
-  font-weight: 500;
-}
-
-.body-data-meta {
-    color: #525252;
-    font-size: 0.6rem;
+.body-data-button {
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    padding: 10px 15px;
+    margin-bottom: 5px;
+    width: 100%;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    position: relative;
   }
   
-/* SVG icon placement */
-.body-data-icon-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 10px;
-}
+  .body-data-button:hover {
+    transform: scale(1.02);
+    filter: drop-shadow(0 0 1em #18bae2);
+  }
   
-.body-data-svg-icon {
-  width: 32px;
-  height: 32px;
-}
+  /* Top row: text + icon */
+  .body-data-top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Left block: title left, data right */
+  .body-data-text-block {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  
+  .body-data-name {
+    color: rgb(170, 170, 170);
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: left;
+  }
+  
+  .body-data-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    gap: 2px;
+  }
+  
+  .body-data-value {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  
+  .body-data-meta {
+    color: #525252;
+    font-size: 0.6rem;
+    opacity: 0.7;
+  }
+  
+  /* Icon centered vertically */
+  .body-data-icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+  }
+  
+  .body-data-svg-icon {
+    height: 32px;
+  }
+  
+  .body-data-arrows {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 10px; /* Adjust this value to move the arrows higher or lower */
+    left: 50%;
+    transform: translateX(-50%); /* Centers the arrows horizontally */
+    gap: 8px;
+    z-index: 1; /* Ensure arrows stay above other content */
+  }
+  
+  .arrow-left, .arrow-right {
+    font-size: 0.9rem;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .arrow-left:hover {
+    opacity: 1;
+    transform: translateX(-2px);
+  }
+  
+  .arrow-right:hover {
+    opacity: 1;
+    transform: translateX(2px);
+  }
+  
+  .body-data-slider {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+    width: 200%; /* twice the width for two slides */
+  }
+  
+  .body-data-slider.weight {
+    transform: translateX(0%);
+  }
+  
+  .body-data-slider.calories {
+    transform: translateX(-50%);
+  }
+  
+  .slide-item {
+    width: 50%;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
+  .body-data-slider-wrapper {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .body-data-slider {
+    display: flex;
+    width: 200%;
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  .body-data-slider.weight {
+    transform: translateX(0%);
+  }
+  
+  .body-data-slider.calories {
+    transform: translateX(-50%);
+  }
+  
+  .slide-item {
+    width: 50%;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
