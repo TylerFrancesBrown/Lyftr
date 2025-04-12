@@ -37,7 +37,7 @@ function App() {
       <div className="right-column">
         <LiftDisplay name="Bench Press" weight={275} date="February 14, 2025" set="275 x 1" rank="titan" icon={viteLogo}/>
         <LiftDisplay name="Squat" weight={315} date="January 29, 2025" set="315 x 2" rank="platinum" icon={viteLogo}/>
-        <LiftDisplay name="Deadlift" weight={365} date="December 29, 2024" set="405 x 1" rank="champion" icon={viteLogo}/>
+        <LiftDisplay name="Deadlift" weight={405} date="December 29, 2024" set="405 x 1" rank="champion" icon={viteLogo}/>
         <BodyDataDisplay weight={175} date="April 12, 2025" calories={2367} />
       </div>
     </div>
