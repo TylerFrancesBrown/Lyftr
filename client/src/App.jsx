@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import LiftDisplay from './liftDisplay.jsx';
 import BodyDataDisplay from './bodyDataDisplay.jsx';
+import WorkoutDisplay from './prevWorkoutDisplay.jsx';
 
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
         <LiftDisplay name="Squat" weight={315} date="January 29, 2025" set="315 x 2" rank="platinum" icon={viteLogo}/>
         <LiftDisplay name="Deadlift" weight={405} date="December 29, 2024" set="405 x 1" rank="champion" icon={viteLogo}/>
         <BodyDataDisplay weight={175} date="April 12, 2025" calories={2367} />
+        <WorkoutDisplay/>
       </div>
     </div>
   )

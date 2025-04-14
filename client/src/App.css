@@ -59,6 +59,8 @@ body, html, #root {
   box-sizing: border-box;
   border-right: 1px solid #333;
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Right column - 33% of screen */
@@ -68,4 +70,6 @@ body, html, #root {
   overflow-y: auto;
   box-sizing: border-box;
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
