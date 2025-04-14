@@ -19,43 +19,43 @@
   
   /* RANK: Bronze */
   .lift-display.bronze:hover {
-    filter: drop-shadow(0 0 1em #cd7f32);
+    filter: drop-shadow(0 0 .5em #cd7f32);
   }
   
   /* RANK: Silver */
   .lift-display.silver:hover {
-    filter: drop-shadow(0 0 1em #c0c0c0);
+    filter: drop-shadow(0 0 .5em #c0c0c0);
   }
   
   /* RANK: Gold */
   .lift-display.gold:hover {
-    filter: drop-shadow(0 0 1em #ffd700);
+    filter: drop-shadow(0 0 .5em #ffd700);
   }
   
   /* RANK: Platinum (Green-tinted) */
   .lift-display.platinum:hover {
-    filter: drop-shadow(0 0 1em #00e699); /* Greenish platinum */
+    filter: drop-shadow(0 0 .5em #00e699); /* Greenish platinum */
   }
 
   
   /* RANK: Diamond */
   .lift-display.diamond:hover {
-    filter: drop-shadow(0 0 1em #87cefa); /* Light blue */
+    filter: drop-shadow(0 0 .5em #87cefa); /* Light blue */
   }
   
   /* RANK: Champion */
   .lift-display.champion:hover {
-    filter: drop-shadow(0 0 1em #d94aff); /* Magenta/Purple */
+    filter: drop-shadow(0 0 .5em #d94aff); /* Magenta/Purple */
   }
   
   /* RANK: Titan */
   .lift-display.titan:hover {
-    filter: drop-shadow(0 0 1em #ff3131); /* Intense red */
+    filter: drop-shadow(0 0 .5em #ff3131); /* Intense red */
   }
   
   /* RANK: Olympian */
   .lift-display.olympian:hover {
-    filter: drop-shadow(0 0 1em #40e0d0); /* Turquoise */
+    filter: drop-shadow(0 0 .5em #40e0d0); /* Turquoise */
   }
   
 /* Text Layout */
@@ -93,4 +93,5 @@
   .lift-svg-icon {
     width: 32px;
     height: 32px;
+    transition: transform 0.2s ease;
   }
